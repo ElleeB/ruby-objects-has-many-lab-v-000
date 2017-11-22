@@ -6,9 +6,8 @@ class Post
     @title = title
   end
 
-  def author_name
-    if author.name != " "
-      self.author.name
+  def self.author_name
+    if self.author.name
     else
       nil
     end
