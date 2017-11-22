@@ -21,7 +21,7 @@ class Author
     @title = title
     @post = Post.new(title)
     @post.author = self
-    @songs << @post
+    @songs << @title
     @@post_count += 1
     @post
   end
